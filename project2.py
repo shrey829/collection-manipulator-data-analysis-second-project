@@ -39,9 +39,8 @@ while choice<7:
           case 3:
                print("for update")
                studentid_for_update=int(input("enter your student id for changes:"))
-               for i in studentinformation:
+               for i in range(len(studentinformation)):
                     if(studentid_for_update==studentinformation[i].get("studentid_student")):
-                         i+=1
                          print("1 for updating name")
                          print("2 for updating grade")
                          print("3 for updating age")
@@ -62,7 +61,7 @@ while choice<7:
               print("give me your delete record")
               del_studentid=int(input("enter your student id:"))
               for i in range(len(studentinformation)):
-                   if(del_studentid==studentinformation[i].get("studentid_student:")):
+                   if(del_studentid==studentinformation[i].get("studentid_student")):
                         del studentinformation[i]
           case 5:
                print("subjects offered are")
