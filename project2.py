@@ -14,7 +14,7 @@ while choice<7:
           case 1:
                name=input(("enter your name:"))
                age=int(input("enter your age:"))
-               grade=int(input("enter your grade:"))
+               grade=(input("enter your grade:"))
                subject1=input("enter your subjects:")
                studentid2=int(input("enter your student id:"))
                dateofbirth3=(input("enter your date of birth (yyyy-mm-dd):"))
@@ -25,6 +25,7 @@ while choice<7:
                student={
                     "name_student=":name,
                     "age_student":age,
+                    "grade_student"grade,
                     "subject_student":subject,
                     "studentid_student":studentid,
                     "dateofbirth_student":dateofbirth           
